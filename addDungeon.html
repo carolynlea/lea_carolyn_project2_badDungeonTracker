@@ -16,6 +16,9 @@
 	
 	<!--Stylesheets here-->
 	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" /> 
+	
 	<!--Javascript normally at bottom except for Modernizr-->
 	
 </head>
@@ -61,6 +64,43 @@
 					</select>
 				</div>
 				
+				<div data-role="fieldcontain">
+					<label for="mydate">Date Found:</label>
+
+					<input name="mydate" id="mydate" type="date" data-role="datebox"
+					   data-options='{"mode": "calbox"}'>
+				</div>
+				
+				<div data-role="fieldcontain">
+				 	<fieldset data-role="controlgroup">
+						<legend>Is the dungeon populated?</legend>
+						<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+						<label for="checkbox-1">yes</label>
+						<input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
+						<label for="checkbox-2">no</label>
+				    </fieldset>
+				</div>
+				
+				<div data-role="fieldcontain">
+				 	<fieldset data-role="controlgroup">
+						<legend>Are the inhabitants friendly?</legend>
+						<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+						<label for="checkbox-1">no</label>
+						<input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
+						<label for="checkbox-2">yes</label>
+				    </fieldset>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="select-choice-1" class="select">Choose shipping method:</label>
+					<select name="select-choice-1" id="select-choice-1">
+						<option value="standard">Standard: 7 day</option>
+						<option value="rush">Rush: 3 days</option>
+						<option value="express">Express: next day</option>
+						<option value="overnight">Overnight</option>
+					</select>
+				</div>
+				
 			</form>
 		</div>
 		
@@ -68,6 +108,8 @@
 		
 	</div>
 	
-	
+	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
+	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
 </body>
 </html>
