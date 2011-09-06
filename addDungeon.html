@@ -29,11 +29,42 @@
 			</div>
 		
 		<div data-role="content">
+			<form>
+				<div data-role="fieldcontain">
+				    <label for="name">Dungeon Name:</label>
+				    <input type="text" name="name" id="name" value=""  />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="select-choice-1" class="select">Choose a dungeon type:</label>
+					<select name="select-choice-1" id="select-choice-1">
+						<option value="campsite">Campsite</option>
+						<option value="cave">Cave</option>
+						<option value="fort">Fort</option>
+						<option value="mine">Mine</option>
+						<option value="portal">Portal</option>
+						<option value="ruin">Ruin</option>
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="select-choice-1" class="select">Choose a dungeon location:</label>
+					<select name="select-choice-1" id="select-choice-1">
+						<option value="north">north</option>
+						<option value="northeast">northeast</option>
+						<option value="northwest">northwest</option>
+						<option value="east">east</option>
+						<option value="west">west</option>
+						<option value="south">south</option>
+						<option value="south">southeast</option>
+						<option value="south">southwest</option>
+					</select>
+				</div>
+				
+			</form>
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
-			<h4>Footer</h4>
-		</div>
+		
 		
 	</div>
 	
