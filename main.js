@@ -21,12 +21,12 @@ function getItems(){
 			  var dungeon_type = value[1];
 			  var location = value[2];
 			  var date_found = value[3];
-			  var populated = value[4];
-			  var friendly = value[5];
-			  var selOne = value[6];
-			  var selTwo = value[7];
-			  var loot_rating = value[8];
-			  var no_loot_here = value[9];
+			  var populated_1 = value[4];
+			  var populated_2 = value[5];
+			  var friendly_1 = value[6];
+			  var friendly_2 = value[7];
+			  var occupant = value[8];
+			  var loot_rating = value[9];
 			  var notes = value[10];
 			  
 			  var newDiv = document.createElement("div");
@@ -75,24 +75,24 @@ function storeItems(id){
 	var dungeon_type = document.getElementById('dungeon_type').value;
 	var location = document.getElementById('location').value;
 	var date_found = document.getElementById('date_found').value;
-	var populated = document.getElementById('populated').value;
-	var friendly = document.getElementById('friendly').value;
-	var selOne = document.getElementById('selOne').value;
-	var selTwo = document.getElementById('selTwo').value;
+	var populated_1 = document.getElementById('populated_1').value;
+	var populated_2 = document.getElementById('populated_2').value;
+	var friendly_1 = document.getElementById('friendly_1').value;
+	var friendly_2 = document.getElementById('friendly_2').value;
+	var occupant = document.getElementById('occupant').value;
 	var loot_rating = document.getElementById('loot_rating').value;
-	var no_loot_here = document.getElementById('no_loot_here').value;
 	var notes = document.getElementById('notes').value;
 	
 	values.push(dungeon_name);
 	values.push(dungeon_type);
 	values.push(location);
 	values.push(date_found);
-	values.push(populated);
-	values.push(friendly);
-	values.push(selOne);
-	values.push(selTwo);
+	values.push(populated_1);
+	values.push(populated_2);
+	values.push(friendly_1);
+	values.push(friendly_2);
+	values.push(occupant);
 	values.push(loot_rating);
-	values.push(no_loot_here);
 	values.push(notes);
 	
 	localStorage.setItem(itemId, values.join(';'));
@@ -124,30 +124,30 @@ function editItem(id){
 	var dungeon_type = value[1];
 	var location = value[2];
 	var date_found = value[3];
-	var populated = value[4];
-	var friendly = value[5];
-	var selOne = value[6];
-	var selTwo = value[7];
-	var loot_rating = value[8];
-	var no_loot_here = value[9];
+	var populated_1 = value[4];
+	var populated_2 = value[5];
+	var friendly_1 = value[6];
+	var friendly_2 = value[7];
+	var occupant = value[8];
+	var loot_rating = value[9];
 	var notes = value[10];
 	
 	document.getElementById('dungeon_name').value = dungeon_name;
 	document.getElementById('dungeon_type').value = dungeon_type;
 	document.getElementById('location').value = location;
 	document.getElementById('date_found').value = date_found;
-	if (populated == "on"){
-		document.getElementById('populated').setAttribute("checked", "checked");
+	if (populated_1 == "on"){
+		document.getElementById('populated_1').setAttribute("checked", "checked");
+	}else{
+		document.getElementById('populated_2').setAttribute("checked", "checked");
 	}
-	if (friendly == "on"){
-		document.getElementById('friendly').setAttribute("checked", "checked");
+	if (friendly_1 == "on"){
+		document.getElementById('friendly_1').setAttribute("checked", "checked");
+	}else{
+		document.getElementById('friendly_2').setAttribute("checked", "checked");
 	}
-	document.getElementById('selOne').value = selOne;
-	document.getElementById('selTwo').value = selTwo;
+	document.getElementById('occupant').value = occupant;
 	document.getElementById('loot_rating').value = loot_rating;
-	if (no_loot_here == "on"){
-		document.getElementById('no_loot_here').setAttribute("checked", "checked");
-	}
 	document.getElementById('notes').value = notes;
 	
 	var editItem = document.getElementById('editItem');
@@ -159,12 +159,12 @@ function editItem(id){
 			var dungeon_type = document.getElementById('dungeon_type').value;
 			var location = document.getElementById('location').value;
 			var date_found = document.getElementById('date_found').value;
-			var populated = document.getElementById('populated').value;
-			var friendly = document.getElementById('friendly').value;
-			var selOne = document.getElementById('selOne').value;
-			var selTwo = document.getElementById('selTwo').value;
+			var populated_1 = document.getElementById('populated_1').value;
+			var populated_1 = document.getElementById('populated_2').value;
+			var friendly_2 = document.getElementById('friendly_1').value;
+			var friendly_2 = document.getElementById('friendly_2').value;
+			var occupant = document.getElementById('occupant').value;
 			var loot_rating = document.getElementById('loot_rating').value;
-			var no_loot_here = document.getElementById('no_loot_here').value;
 			var notes = document.getElementById('notes').value;
 
 			var viewForm = [
@@ -172,12 +172,12 @@ function editItem(id){
 				dungeon_type,
 				location,
 				date_found,
-				populated,
-				friendly,
-				selOne,
-				selTwo,
+				populated_1,
+				populated_2,
+				friendly_1,
+				friendly_2,
+				occupant,
 				loot_rating,
-				no_loot_here,
 				notes
 				];
 				

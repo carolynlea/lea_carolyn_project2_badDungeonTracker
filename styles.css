@@ -38,56 +38,6 @@ September 1, 2011
 	position:center;
 }
 
-
-fieldset{
-	border:1px solid #37382C;
-	background:#FEFEF0;
-}
-
-
-
-label{
-	color:#37382C;
-	font-family:georgia;
-	line-height:2em;
-	text-transform:capitalize;
-}
-
-
-
-p{
-	color:#37382C;
-	font-family:georgia;
-	text-align:left;
-	text-decoration:none;
-}
-
-textarea{
-	color:#000000;
-	width:260px;
-	height:80px;
-	font-style:italic;
-}
-
-input{
-	color:#000000;
-	font-style:italic;
-	
-}
-
-select{
-	background-color:#7C8055;
-	color:#FEFEF0;
-}
-
-#editItem {
-	display: none;
-}
-
-#submit {
-	display: visible;
-}
-
 a {
 	padding: 10px;
 	color: #d29105;
@@ -95,22 +45,6 @@ a {
 
 a:hover {
 	color: #7C8055;
-}
-
-img {
-	width:100px;
-}
-
-#list div {
-	border:1px solid #37382C;
-	background:#E2E6BC;
-	color:9EA184;
-	margin-top:20px;
-	padding-left:20px;
-}
-
-#list div a {
-	line-height:60px;
 }
 
 .myButton {
@@ -146,14 +80,7 @@ img {
 
 
 
-#launch p {
-	text-align:center;
-	padding-top:10px;
-	padding-bottom:30px;
-	padding-left:10px;
-	padding-right:10px;
-	font-size:40px;
-}
+
 
 
 

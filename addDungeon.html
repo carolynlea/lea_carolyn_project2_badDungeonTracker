@@ -7,12 +7,12 @@
 	<title>Mobile Site Template</title>
 	
 	<!--Mobile viewport optimized:j.imp/bplateviewport-->
-	<meta name="HandheldFriendly" content="true">
-	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
 	<!--Mobile IE needs cleartype for smoothing fonts-->
-	<meta http-equiv="cleartype" content="on">
+	<meta http-equiv="cleartype" content="on" />
 	
 	<!--Stylesheets here-->
 	
@@ -25,7 +25,7 @@
 
 <body>
 	
-	<div data-role="page" id="home">
+	<div data-role="page" id="addDungeon" data-theme="a">
 		
 			<div data-role="header" id="header" data-position="fixed">
 				<h1>Add A Dungeon</h1>
@@ -34,13 +34,13 @@
 		<div data-role="content">
 			<form>
 				<div data-role="fieldcontain">
-				    <label for="name">Dungeon Name:</label>
-				    <input type="text" name="name" id="name" value=""  />
+				    <label for="dungeon_name">Dungeon Name:</label>
+				    <input type="text" name="dungeon_name" id="dungeon_name" value=""  />
 				</div>
 				
 				<div data-role="fieldcontain">
-					<label for="select-choice-1" class="select">Choose a dungeon type:</label>
-					<select name="select-choice-1" id="select-choice-1">
+					<label for="dungeon_type" class="select">Choose a dungeon type:</label>
+					<select name="dungeon_type" id="dungeon_type">
 						<option value="campsite">Campsite</option>
 						<option value="cave">Cave</option>
 						<option value="fort">Fort</option>
@@ -51,8 +51,8 @@
 				</div>
 				
 				<div data-role="fieldcontain">
-					<label for="select-choice-1" class="select">Choose a dungeon location:</label>
-					<select name="select-choice-1" id="select-choice-1">
+					<label for="location" class="select">Choose a dungeon location:</label>
+					<select name="location" id="location">
 						<option value="north">north</option>
 						<option value="northeast">northeast</option>
 						<option value="northwest">northwest</option>
@@ -68,30 +68,30 @@
 					<label for="mydate">Date Found:</label>
 
 					<input name="mydate" id="mydate" type="date" data-role="datebox"
-					   data-options='{"mode": "calbox"}'>
+					   data-options='{"mode": "calbox"}' data-theme="a" />
 				</div>
 				
 				<div data-role="fieldcontain">
 				 	<fieldset data-role="controlgroup">
 						<legend>Is the dungeon populated?</legend>
-						<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
-						<label for="checkbox-1">yes</label>
-						<input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
-						<label for="checkbox-2">no</label>
+						<input type="checkbox" name="populated_1" id="populated_1" class="custom" />
+						<label for="populated_1">yes</label>
+						<input type="checkbox" name="populated_2" id="populated_2" class="custom" />
+						<label for="populated_2">no</label>
 				    </fieldset>
 				</div>
 				
 				<div data-role="fieldcontain">
 				 	<fieldset data-role="controlgroup">
 						<legend>Are the inhabitants friendly?</legend>
-						<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
-						<label for="checkbox-1">no</label>
-						<input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
-						<label for="checkbox-2">yes</label>
+						<input type="checkbox" name="friendly_1" id="friendly_1" class="custom" />
+						<label for="friendly_1">no</label>
+						<input type="checkbox" name="friendly_2" id="friendly_2" class="custom" />
+						<label for="friendly_2">yes</label>
 				    </fieldset>
 				</div>
 				
-				<div data-role="fieldcontain"> <label for="myselect1" class="select">Choose inhabitants:</label> <select name="myselect1" id="myselect1" multiple="true"> <option>Please choose</option>
+				<div data-role="fieldcontain"> <label for="occupant" class="select">Choose inhabitants:</label> <select name="occupant" id="occupant" multiple="true"> <option>Please choose</option>
 				<optgroup label="Animal"> 
 				<option value="option1" disabled="true">bears</option> 
 				<option value="option2">crabs</option> 
@@ -125,20 +125,20 @@
 				</div>
 				
 				<div data-role="fieldcontain">
-					<label for="slider">Rate the loot:</label>
+					<label for="loot_rating">Rate the loot:</label>
 					<p>On a scale of 1 being "NOT worth it!" to 10 
 							being "the BEST booty ever!", rate the loot found in this dungeon:
 							(Use 0 to indicate there was no loot to be found.)
 					</p>
-				 	<input type="range" name="slider" id="slider" value="0" min="0" max="10"  />
+				 	<input type="range" name="loot_rating" id="loot_rating" value="0" min="0" max="10"  />
 				</div>
 				
 				<div data-role="fieldcontain">
-					<label for="textarea">Textarea:</label>
-					<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+					<label for="notes">Textarea:</label>
+					<textarea cols="40" rows="8" name="notes" id="notes"></textarea>
 				</div>
 				
-				<a href="#" data-role="button" input-type="submit">Add Dungeon</a>
+				<a href="#" data-role="button" input-type="submit" id="submit">Add Dungeon</a>
 				
 			</form>
 		</div>
