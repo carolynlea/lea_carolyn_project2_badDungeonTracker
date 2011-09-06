@@ -91,15 +91,54 @@
 				    </fieldset>
 				</div>
 				
-				<div data-role="fieldcontain">
-					<label for="select-choice-1" class="select">Choose shipping method:</label>
-					<select name="select-choice-1" id="select-choice-1">
-						<option value="standard">Standard: 7 day</option>
-						<option value="rush">Rush: 3 days</option>
-						<option value="express">Express: next day</option>
-						<option value="overnight">Overnight</option>
-					</select>
+				<div data-role="fieldcontain"> <label for="myselect1" class="select">Choose inhabitants:</label> <select name="myselect1" id="myselect1" multiple="true"> <option>Please choose</option>
+				<optgroup label="Animal"> 
+				<option value="option1" disabled="true">bears</option> 
+				<option value="option2">crabs</option> 
+				<option value="option3">fish</option>
+				<option value="option3">lions</option>
+				<option value="option3">rats</option>
+				<option value="option3">wolves</option>
+				</optgroup>
+				<optgroup label="Human">
+				<option value="option1">bandits</option>
+				<option value="option2">conjurers</option>
+				<option value="option3">marauders</option>
+				<option value="option3">necromancers</option>
+				<option value="option3">quest giver</option>
+				<option value="option3">trainer</option>
+				</optgroup>
+				<optgroup label="Mythic">
+				<option value="option1">goblins</option>
+				<option value="option2">imps</option>
+				<option value="option3">minotaurs</option>
+				<option value="option3">ogres</option>
+				<option value="option3">unicorn</option>
+				</optgroup>
+				<optgroup label="Undead">
+				<option value="option1">skeletons</option>
+				<option value="option2">vampires</option>
+				<option value="option3">wraiths</option>
+				<option value="option3">zombies</option>
+				</optgroup>
+				</select>
 				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="slider">Rate the loot:</label>
+					<p>On a scale of 1 being "NOT worth it!" to 10 
+							being "the BEST booty ever!", rate the loot found in this dungeon:
+							(Use 0 to indicate there was no loot to be found.)
+					</p>
+				 	<input type="range" name="slider" id="slider" value="0" min="0" max="10"  />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="textarea">Textarea:</label>
+					<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+				</div>
+				
+				<a href="#" data-role="button" input-type="submit">Add Dungeon</a>
 				
 			</form>
 		</div>
