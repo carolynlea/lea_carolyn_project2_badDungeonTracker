@@ -1,0 +1,122 @@
+<!--
+Carolyn Lea
+<<<<<<< HEAD
+MiU 1109
+=======
+MiU 1108
+>>>>>>> master
+Project 1
+September 1, 2011
+-->
+
+<html>
+<head>
+<title>
+	Ruins
+</title>
+<meta name="viewport" content="width=device-width" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<script language="javascript">
+	var json = { "ruins":[ 
+			{
+				"dungeon_name": "Vahtacen",
+				"dungeon_type": "ruin",
+				"location": "south_area",
+				"date_found": "August 23, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "undead",
+				"sel2": "wraiths",
+				"loot_rating": "8",
+				"no_loot_here": "",
+				"notes": "puzzle level, welkynd stones, swinging-blade traps"
+			},
+			{
+				"dungeon_name": "Atatar",
+				"dungeon_type": "ruin",
+				"location": "south_area",
+				"date_found": "August 24, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "human",
+				"sel2": "bandits",
+				"loot_rating": "8",
+				"no_loot_here": "",
+				"notes": "Confusing ruin with many traps. Azani Blackheart is here."
+			},
+			{
+				"dungeon_name": "Nenalata",
+				"dungeon_type": "ruin",
+				"location": "west_area",
+				"date_found": "August 25, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "undead",
+				"sel2": "vampires",
+				"loot_rating": "7",
+				"no_loot_here": "",
+				"notes": "Many varla and welkynd stones."
+			},
+			{
+				"dungeon_name": "Morahame",
+				"dungeon_type": "ruin",
+				"location": "southwest_area",
+				"date_found": "August 26, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "mythic",
+				"sel2": "ogres",
+				"loot_rating": "5",
+				"no_loot_here": "",
+				"notes": "Lots of loose equipment and traps."
+			},
+			{
+				"dungeon_name": "Wendelbek",
+				"dungeon_type": "ruin",
+				"location": "east_area",
+				"date_found": "August 27, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "human",
+				"sel2": "necromancers",
+				"loot_rating": "9",
+				"no_loot_here": "",
+				"notes": "Lots of stones, ayleid statue, sould gems.  Lots of traps."
+			}
+		]
+	};
+			var arr = json.ruins;
+			if(!arr) return;
+			for(var i = arr.length -1; i >= 0; --i){
+				var o = arr[i];
+				var dungeon_name = o.dungeon_name;
+				var dungeon_type = o.dungeon_type;
+				var dlocation = o.dlocation;
+				var date_found = o.date_found;
+				var populated = o.populated;
+				var friendly = o.friendly;
+				var sel1=o.sel1;
+				var sel2=o.sel2;
+				var loot_rating = o.loot_rating;
+				var no_loot_here = o.no_loot_here;
+				var notes = o.notes;
+			
+			
+				document.write ("<div id='data'>");
+				document.write ("<h2><font color='#37382C'>dungeon_name</font>:  " +o.dungeon_name+"<h2>");
+				document.write ("<h2><font color='#37382C'>dungeon_type</font>:  " +o.dungeon_type+"<h2>");
+				document.write ("<h2><font color='#37382C'>location</font>:  " +o.dlocation+"<h2>");
+				document.write ("<h2><font color='#37382C'>date_found</font>:  " +o.date_found+"<h2>");
+				document.write ("<h2><font color='#37382C'>populated</font>:  " +o.populated+"<h2>");
+				document.write ("<h2><font color='#37382C'>friendly</font>:  " +o.friendly+"<h2>");
+				document.write ("<h2><font color='#37382C'>sel1</font>:  " +o.sel1+"<h2>");
+				document.write ("<h2><font color='#37382C'>sel2</font>:  " +o.sel2+"<h2>");
+				document.write ("<h2><font color='#37382C'>loot_rating</font>:  " +o.loot_rating+"<h2>");
+				document.write ("<h2><font color='#37382C'>no_loot_here</font>:  " +o.no_loot_here+"<h2>");
+				document.write ("<h2><font color='#37382C'>notes</font>:  " +o.notes+"<h2>");
+				document.write ("</div>");
+				document.write (" <br /><br />");
+		}
+</script>
+</head>
+</html>

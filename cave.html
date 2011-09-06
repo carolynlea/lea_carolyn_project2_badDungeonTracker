@@ -1,0 +1,122 @@
+<!--
+Carolyn Lea
+<<<<<<< HEAD
+MiU 1109
+=======
+MiU 1108
+>>>>>>> master
+Project 1
+September 1, 2011
+-->
+
+<html>
+<head>
+<title>
+	Caves
+</title>
+<meta name="viewport" content="width=device-width" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<script language="javascript">
+	var json = { "caves":[ 
+			{
+				"dungeon_name": "Hrota Cave",
+				"dungeon_type": "cave",
+				"location": "southwest_area",
+				"date_found": "August 11,2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "human",
+				"sel2": "bandits",
+				"loot_rating": "5",
+				"no_loot_here": "",
+				"notes": "Lots of traps.  Be careful!"
+			},
+			{
+				"dungeon_name": "BrittleRock Cave",
+				"dungeon_type": "cave",
+				"location": "south area",
+				"date_found": "August 12, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "animal",
+				"sel2": "fish",
+				"loot_rating": "1",
+				"no_loot_here": "",
+				"notes": "one soul gem"
+			},
+			{
+				"dungeon_name": "Broken Promises Cave",
+				"dungeon_type": "cave",
+				"location": "east_area",
+				"date_found": "August 13, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "mythic",
+				"sel2": "goblins",
+				"loot_rating": "6",
+				"no_loot_here": "",
+				"notes": "Watch for swinging traps.  Boss chest."
+			},
+			{
+				"dungeon_name": "Echo Cave",
+				"dungeon_type": "cave",
+				"location": "west_area",
+				"date_found": "August 14, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "human",
+				"sel2": "necromancers",
+				"loot_rating": "9",
+				"no_loot_here": "",
+				"notes": "Many boss chests.  Mannimarco is here."
+			},
+			{
+				"dungeon_name": "Outlaw Endres' Cave",
+				"dungeon_type": "cave",
+				"location": "north",
+				"date_found": "August 15, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "human",
+				"sel2": "bandits",
+				"loot_rating": "5",
+				"no_loot_here": "",
+				"notes": "There is a hidden trap door on the bottom level."
+			}
+		]
+	};
+			var arr = json.caves;
+			if(!arr) return;
+			for(var i = arr.length -1; i >= 0; --i){
+				var o = arr[i];
+				var dungeon_name = o.dungeon_name;
+				var dungeon_type = o.dungeon_type;
+				var dlocation = o.dlocation;
+				var date_found = o.date_found;
+				var populated = o.populated;
+				var friendly = o.friendly;
+				var sel1=o.sel1;
+				var sel2=o.sel2;
+				var loot_rating = o.loot_rating;
+				var no_loot_here = o.no_loot_here;
+				var notes = o.notes;
+			
+			
+				document.write ("<div id='data'>");
+				document.write ("<h2><font color='#37382C'>dungeon_name</font>:  " +o.dungeon_name+"<h2>");
+				document.write ("<h2><font color='#37382C'>dungeon_type</font>:  " +o.dungeon_type+"<h2>");
+				document.write ("<h2><font color='#37382C'>location</font>:  " +o.dlocation+"<h2>");
+				document.write ("<h2><font color='#37382C'>date_found</font>:  " +o.date_found+"<h2>");
+				document.write ("<h2><font color='#37382C'>populated</font>:  " +o.populated+"<h2>");
+				document.write ("<h2><font color='#37382C'>friendly</font>:  " +o.friendly+"<h2>");
+				document.write ("<h2><font color='#37382C'>sel1</font>:  " +o.sel1+"<h2>");
+				document.write ("<h2><font color='#37382C'>sel2</font>:  " +o.sel2+"<h2>");
+				document.write ("<h2><font color='#37382C'>loot_rating</font>:  " +o.loot_rating+"<h2>");
+				document.write ("<h2><font color='#37382C'>no_loot_here</font>:  " +o.no_loot_here+"<h2>");
+				document.write ("<h2><font color='#37382C'>notes</font>:  " +o.notes+"<h2>");
+				document.write ("</div>");
+				document.write (" <br /><br />");
+		}
+</script>
+</head>
+</html>

@@ -1,0 +1,122 @@
+<!--
+Carolyn Lea
+<<<<<<< HEAD
+MiU 1109
+=======
+MiU 1108
+>>>>>>> master
+Project 1
+September 1, 2011
+-->
+
+<html>
+<head>
+<title>
+	Mines
+</title>
+<meta name="viewport" content="width=device-width" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<script language="javascript">
+	var json = { "mines":[ 
+			{
+				"dungeon_name": "Derelict Mine",
+				"dungeon_type": "mine",
+				"location": "south_area",
+				"date_found": "August 21, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "mythic",
+				"sel2": "goblins",
+				"loot_rating": "4",
+				"no_loot_here": "",
+				"notes": "Sharp Tooth Goblin base.  2 totems here."
+			},
+			{
+				"dungeon_name": "Plundered Mine",
+				"dungeon_type": "mine",
+				"location": "west_area",
+				"date_found": "August 22, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "mythic",
+				"sel2": "goblins",
+				"loot_rating": "3",
+				"no_loot_here": "",
+				"notes": "Three Feather Goblin base.  There's a breakaway wall on the top level."
+			},
+			{
+				"dungeon_name": "Crumbling Mine",
+				"dungeon_type": "mine",
+				"location": "northwest_area",
+				"date_found": "August 23, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "human",
+				"sel2": "on",
+				"loot_rating": "3",
+				"no_loot_here": "",
+				"notes": "Located under Chorral.  Leads to hidden sewer system."
+			},
+			{
+				"dungeon_name": "Empty Mine",
+				"dungeon_type": "mine",
+				"location": "south_area",
+				"date_found": "August 24, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "mythic",
+				"sel2": "goblin",
+				"loot_rating": "4",
+				"no_loot_here": "",
+				"notes": "Some notable silver pieces but lots of goblins."
+			},
+			{
+				"dungeon_name": "Rickety Mine",
+				"dungeon_type": "mine",
+				"location": "southeast_area",
+				"date_found": "August 25, 2011",
+				"populated": "on",
+				"friendly": "",
+				"sel1": "human",
+				"sel2": "marauders",
+				"loot_rating": "6",
+				"no_loot_here": "",
+				"notes": "Average loot.  Swinging traps."
+			}
+		]
+	};
+			var arr = json.mines;
+			if(!arr) return;
+			for(var i = arr.length -1; i >= 0; --i){
+				var o = arr[i];
+				var dungeon_name = o.dungeon_name;
+				var dungeon_type = o.dungeon_type;
+				var dlocation = o.dlocation;
+				var date_found = o.date_found;
+				var populated = o.populated;
+				var friendly = o.friendly;
+				var sel1=o.sel1;
+				var sel2=o.sel2;
+				var loot_rating = o.loot_rating;
+				var no_loot_here = o.no_loot_here;
+				var notes = o.notes;
+			
+			
+				document.write ("<div id='data'>");
+				document.write ("<h2><font color='#37382C'>dungeon_name</font>:  " +o.dungeon_name+"<h2>");
+				document.write ("<h2><font color='#37382C'>dungeon_type</font>:  " +o.dungeon_type+"<h2>");
+				document.write ("<h2><font color='#37382C'>location</font>:  " +o.dlocation+"<h2>");
+				document.write ("<h2><font color='#37382C'>date_found</font>:  " +o.date_found+"<h2>");
+				document.write ("<h2><font color='#37382C'>populated</font>:  " +o.populated+"<h2>");
+				document.write ("<h2><font color='#37382C'>friendly</font>:  " +o.friendly+"<h2>");
+				document.write ("<h2><font color='#37382C'>sel1</font>:  " +o.sel1+"<h2>");
+				document.write ("<h2><font color='#37382C'>sel2</font>:  " +o.sel2+"<h2>");
+				document.write ("<h2><font color='#37382C'>loot_rating</font>:  " +o.loot_rating+"<h2>");
+				document.write ("<h2><font color='#37382C'>no_loot_here</font>:  " +o.no_loot_here+"<h2>");
+				document.write ("<h2><font color='#37382C'>notes</font>:  " +o.notes+"<h2>");
+				document.write ("</div>");
+				document.write (" <br /><br />");
+		}
+</script>
+</head>
+</html>

@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8" />
+	
+	<title>Mobile Dungeon Tracker</title>
+	
+	<!--Mobile viewport optimized:j.imp/bplateviewport-->
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!--Mobile IE needs cleartype for smoothing fonts-->
+	<meta http-equiv="cleartype" content="on" />
+	
+	<!--Stylesheets here-->
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
+	
+	<!--Javascript normally at bottom except for Modernizr-->
+	
+</head>
+<body>
+	
+	<div data-role="page" id="home" data-theme="a">
+		
+		<div data-role="header" id="header" data-position="fixed">
+			<h1>Dungeon Tracker</h1>
+		</div>
+		
+		<div data-role="content">
+			
+			<center><img src="images/dungeon-2.png" width="300"/></center>
+			<a href="additem.html" data-role="button" data-theme="e">Add Dungeon</a>
+			
+			<div data-role="collapsible-set">
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Find saved items by category.</h3>
+					<ul data-role="listview">
+						<li>
+							<a href="#campsites">
+								
+								<h5>Campsites</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#caves">
+								
+								<h5>Caves</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#forts">
+								
+								<h5>Forts</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#mines">
+								
+								<h5>Mines</h5>
+							</a>
+						</li>	
+						<li>
+							<a href="#portals">
+								
+								<h5>Portals</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#ruins">
+								
+								<h5>Ruins</h5>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>		
+	</div>
+	
+	
+	<div data-role="page" id="campsites" data-add-back-btn="true" data-theme="a">
+		
+		<div data-role="header" id="header" data-position="fixed">
+			<h1>Campsites</h1>
+		</div>
+		
+		<div data-role="content">
+			
+			<div data-role="collapsible-set" data-theme="a">
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Black Dog Camp</h3>
+					<ul data-role="listview">
+						<li>Location: southwest area</li>
+						<li>Date Found: August 11, 2011</li>
+						<li>Populated: yes</li>
+						<li>Friendly: no</li>
+						<li>Occupant: human</li>
+						<li>Category: bandits</li>
+						<li>Loot Rating: 0</li>
+						<li>No Loot Here: yes</li>
+						<li>Notes: One drunk bandit here.</li>
+					</ul>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Bawnwatch Camp</h3>
+					<ul data-role="listview">
+						<li>Location: east area</li>
+						<li>Date Found: August 7, 2011</li>
+						<li>Populated: no</li>
+						<li>Friendly: no</li>
+						<li>Occupant: none</li>
+						<li>Category: none</li>
+						<li>Loot Rating: 0</li>
+						<li>No Loot Here: yes</li>
+						<li>Notes: You can watch the ghost of the Forlorn Watchman.  Good camp to drop loot.</li>
+					</ul>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Wind Range Camp</h3>
+					<ul data-role="listview">
+						<li>Location: east area</li>
+						<li>Date Found: August 8, 2011</li>
+						<li>Populated: yes</li>
+						<li>Friendly: no</li>
+						<li>Occupant: human</li>
+						<li>Category: bandits</li>
+						<li>Loot Rating: 2</li>
+						<li>No Loot Here: no</li>
+						<li>Notes: Found some leather greaves.</li>
+					</ul>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Sercen Camp</h3>
+					<ul data-role="listview">
+						<li>Location: east area</li>
+						<li>Date Found: August 9, 2011</li>
+						<li>Populated: yes</li>
+						<li>Friendly: yes</li>
+						<li>Occupant: human</li>
+						<li>Category: trainer</li>
+						<li>Loot Rating: 0</li>
+						<li>No Loot Here: yes</li>
+						<li>Notes: Alchemy trainer.</li>
+					</ul>
+				</div>
+				
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Carbo's Camp</h3>
+					<ul data-role="listview">
+						<li>Location: south area</li>
+						<li>Date Found: August 10, 2011</li>
+						<li>Populated: yes</li>
+						<li>Friendly: no</li>
+						<li>Occupant: human</li>
+						<li>Category: bandits</li>
+						<li>Loot Rating: 3</li>
+						<li>No Loot Here: no</li>
+						<li>Notes: Bandits have lockpicks and gold on them.</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>		
+	</div>
+	
+	
+	<div data-role="page" id="caves" data-add-back-btn="true" data-theme="a">
+		
+		<div data-role="header" id="header" data-position="fixed">
+			<h1>Caves</h1>
+		</div>
+		
+		<div data-role="content">
+			
+			<div data-role="collapsible-set">
+				
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Hrota Cave</h3>
+				<ul data-role="listview">
+					<li>Location: southwest area</li>
+					<li>Date Found: August 11, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: human</li>
+					<li>Category: bandits</li>
+					<li>Loot Rating: 5</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Lots of traps. Be careful!</li>
+				</ul>
+			</div>
+			
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Echo Cave</h3>
+				<ul data-role="listview">
+					<li>Location: west area</li>
+					<li>Date Found: August 14, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: human</li>
+					<li>Category: necromancers</li>
+					<li>Loot Rating: 9</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Many boss chests with scrolls and potions.  Mannimarco is here.</li>
+				</ul>
+			</div>
+			
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Brittle Rock Cave</h3>
+				<ul data-role="listview">
+					<li>Location: south area</li>
+					<li>Date Found: August 12, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: animal</li>
+					<li>Category: fish</li>
+					<li>Loot Rating: 1</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: One soul gem.</li>
+				</ul>
+			</div>
+			
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Outlaw Endres' Cave</h3>
+				<ul data-role="listview">
+					<li>Location: north area</li>
+					<li>Date Found: August 15, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: human</li>
+					<li>Category: bandits</li>
+					<li>Loot Rating: 5</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: There is a hidden trap door on the bottom level.</li>
+				</ul>
+			</div>
+			
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Broken Promises Cave</h3>
+				<ul data-role="listview">
+					<li>Location: east area</li>
+					<li>Date Found: August 13, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: mythic</li>
+					<li>Category: goblins</li>
+					<li>Loot Rating: 6</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Watch for swinging traps. Boss chest.</li>
+				</ul>
+			</div>
+			
+			</div>
+		</div>		
+	</div>
+	
+	
+	<div data-role="page" id="forts" data-add-back-btn="true" data-theme="a">
+		
+		<div data-role="header" id="header" data-position="fixed">
+			<h1>Forts</h1>
+		</div>
+		
+		<div data-role="content">
+			
+			<div data-role="collapsible-set">
+				
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Fort Roebeck</h3>
+				<ul data-role="listview">
+					<li>Location: northwest area</li>
+					<li>Date Found: August 16, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: human</li>
+					<li>Category: conjurers</li>
+					<li>Loot Rating: 3</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Some scrolls and potions.  Left some silver armor. Be sure to go back and get it.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Fort Virtue</h3>
+				<ul data-role="listview">
+					<li>Location: north area</li>
+					<li>Date Found: August 17, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: undead</li>
+					<li>Category: zombies</li>
+					<li>Loot Rating: 7</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Fair amount of loot but lots of dart traps.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Fort Urasek</h3>
+				<ul data-role="listview">
+					<li>Location: south area</li>
+					<li>Date Found: August 18, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: mythic</li>
+					<li>Category: goblins</li>
+					<li>Loot Rating: 5</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: You'll find marauders fighting the goblins.  Lots of traps.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Fort Istirus</h3>
+				<ul data-role="listview">
+					<li>Location: north area</li>
+					<li>Date Found: August 19, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: human</li>
+					<li>Category: necromancers</li>
+					<li>Loot Rating: 8</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Complicated 3 levels.  Many dart traps.  Good loot.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Fort Ontu</h3>
+				<ul data-role="listview">
+					<li>Location: northeast area</li>
+					<li>Date Found: August 20, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: yes</li>
+					<li>Occupant: human</li>
+					<li>Category: quest giver</li>
+					<li>Loot Rating: 0</li>
+					<li>No Loot Here: yes</li>
+					<li>Notes: Mages hangout.</li>
+				</ul>
+			</div>
+			
+			</div>
+		</div>		
+	</div>
+	
+	
+	<div data-role="page" id="mines" data-add-back-btn="true" data-theme="a">
+		
+		<div data-role="header" id="header" data-position="fixed">
+			<h1>Mines</h1>
+		</div>
+		
+		<div data-role="content">
+			
+			<div data-role="collapsible-set">
+				
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Derelict Mine</h3>
+				<ul data-role="listview">
+					<li>Location: south area</li>
+					<li>Date Found: August 21, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: mythic</li>
+					<li>Category: goblins</li>
+					<li>Loot Rating: 4</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Sharp Tooth Goblin base. 2 totems here.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Crumbling Mine</h3>
+				<ul data-role="listview">
+					<li>Location: northwest area</li>
+					<li>Date Found: August 23, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: human</li>
+					<li>Category: marauders</li>
+					<li>Loot Rating: 3</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Located under Chorrol.  Leads to a secret sewer system.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Plundered Mine</h3>
+				<ul data-role="listview">
+					<li>Location: west area</li>
+					<li>Date Found: August 22, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: mythic</li>
+					<li>Category: goblins</li>
+					<li>Loot Rating: 3</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Three Feather Goblin base.  There's a breakaway wall at the top level.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Empty Mine</h3>
+				<ul data-role="listview">
+					<li>Location: south area</li>
+					<li>Date Found: August 24, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: mythic</li>
+					<li>Category: goblins</li>
+					<li>Loot Rating: 4</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Some notable silver pieces.  Lots of goblins.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Rickety Mine</h3>
+				<ul data-role="listview">
+					<li>Location: southwest area</li>
+					<li>Date Found: August 25, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: human</li>
+					<li>Category: marauders</li>
+					<li>Loot Rating: 6</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Average loot.  Swinging traps.</li>
+				</ul>
+			</div>
+			
+			</div>
+		</div>		
+	</div>
+	
+	
+	<div data-role="page" id="portals" data-add-back-btn="true" data-theme="a">
+		
+		<div data-role="header" id="header" data-position="fixed">
+			<h1>Portals</h1>
+		</div>
+		
+		<div data-role="content">
+			
+			<div data-role="collapsible-set">
+				
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Bruma Gate</h3>
+				<ul data-role="listview">
+					<li>Location: north area</li>
+					<li>Date Found: August 1, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: mythic</li>
+					<li>Category: minotaurs</li>
+					<li>Loot Rating: 4</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Hard work for so little loot.  Got a nice longsword, though.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Chorrol Gate</h3>
+				<ul data-role="listview">
+					<li>Location: east area</li>
+					<li>Date Found: August 2, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: mythic</li>
+					<li>Category: ogres</li>
+					<li>Loot Rating: 7</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Found the very expensive Daedric Warhammer.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Skingrad Gate</h3>
+				<ul data-role="listview">
+					<li>Location: southeast area</li>
+					<li>Date Found: August 3, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: mythic</li>
+					<li>Category: goblins</li>
+					<li>Loot Rating: 10</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: A goldmine for equipment: lockpicks, varla stones, tons of scrolls, potions, and a full set of ebony armor.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Anvil Gate</h3>
+				<ul data-role="listview">
+					<li>Location: southwest area</li>
+					<li>Date Found: August 4, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: mythic</li>
+					<li>Category: imps</li>
+					<li>Loot Rating: 6</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Lots of gold. Not much else.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Bravil Gate</h3>
+				<ul data-role="listview">
+					<li>Location: west area</li>
+					<li>Date Found: August 5, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: mythic</li>
+					<li>Category: unicorn</li>
+					<li>Loot Rating: 0</li>
+					<li>No Loot Here: yes</li>
+					<li>Notes: Tried to tame the unicorn but got thrown off.  Try again later.</li>
+				</ul>
+			</div>
+			
+			</div>
+		</div>		
+	</div>
+	
+	
+	<div data-role="page" id="ruins" data-add-back-btn="true" data-theme="a">
+		
+		<div data-role="header" id="header" data-position="fixed">
+			<h1>Ruins</h1>
+		</div>
+		
+		<div data-role="content">
+			
+			<div data-role="collapsible-set">
+				
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Vahtacen</h3>
+				<ul data-role="listview">
+					<li>Location: south area</li>
+					<li>Date Found: August 23, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: undead</li>
+					<li>Category: wraiths</li>
+					<li>Loot Rating: 8</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Puzzle level, welkynd stones.  Watch for swinging blade traps.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Atatar</h3>
+				<ul data-role="listview">
+					<li>Location: south area</li>
+					<li>Date Found: August 24, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: human</li>
+					<li>Category: bandits</li>
+					<li>Loot Rating: 8</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Confusing ruin with many traps.  Azani Blackheart is here.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Nenalata</h3>
+				<ul data-role="listview">
+					<li>Location: west area</li>
+					<li>Date Found: August 25, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: undead</li>
+					<li>Category: vampires</li>
+					<li>Loot Rating: 7</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Many varla and welkynd stones.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Morahame</h3>
+				<ul data-role="listview">
+					<li>Location: southwest area</li>
+					<li>Date Found: August 26, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: mythic</li>
+					<li>Category: ogres</li>
+					<li>Loot Rating: 5</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Lots of loose equipment.</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Wendelbek</h3>
+				<ul data-role="listview">
+					<li>Location: east area</li>
+					<li>Date Found: August 27, 2011</li>
+					<li>Populated: yes</li>
+					<li>Friendly: no</li>
+					<li>Occupant: human</li>
+					<li>Category: necromancers</li>
+					<li>Loot Rating: 9</li>
+					<li>No Loot Here: no</li>
+					<li>Notes: Lots of stones, ayleid statue, soul gems.</li>
+				</ul>
+			</div>
+			
+			</div>
+		</div>
+				
+	</div>
+		
+
+<!--	<script src="selectboxes.js" type="text/javascript" ></script>
+	<script src="main.js" type="text/javascript" ></script>
+	<script src="validate.js" type="text/javascript" ></script>
+    <script>getItems();</script> -->
+	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>	
+</body>
+</html>
