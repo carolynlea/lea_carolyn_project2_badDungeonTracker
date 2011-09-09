@@ -1,3 +1,10 @@
+<!--CAROLYN LEA
+	PROJECT 2
+	MIU 1109
+	SEPTEMBER 8, 2011
+-->
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,7 +22,7 @@
 	<meta http-equiv="cleartype" content="on" />
 	
 	<!--Stylesheets here-->
-	
+	<link rel="stylesheet" href="styles.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
 	<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" /> 
 	<!--Javascript normally at bottom except for Modernizr-->
@@ -34,44 +41,91 @@
 			<center><img src="images/dungeon-2.png" width="300"/></center>
 			<a href="#addDungeonToList" data-role="button" data-theme="e">Add Dungeon</a>
 			
-			<div data-role="collapsible-set">
+			<div data-role="fieldcontain">
+			    <label for="search">Search categories:</label>
+			    <input type="search" name="password" id="search" value="" />
+			</div>
+			
+			<h3>Search saved items by category:</h3>
+			
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<div class="ui-bar ui-bar-d" style="height:100px">
+					<a href="#campsites">
+						<center><img src="images/campsite.png" style="height:60px"/></center>
+					</a>Campsites
+					</div>
+				</div>
+				<div class="ui-block-b">	
+					<div class="ui-bar ui-bar-d" style="height:100px">
+					<a href="#caves">
+						<center><img src="images/cave.png" style="height:60px"/></center>
+					</a>Caves
+					</div>
+				</div>
+				<div class="ui-block-a">	
+					<div class="ui-bar ui-bar-d" style="height:100px">		
+					<a href="#forts">
+						<center><img src="images/fort.png" style="height:60px"/></center>
+					</a><br />Forts
+					</div>
+				</div><!-- /grid-b -->
+				<div class="ui-block-b">	
+					<div class="ui-bar ui-bar-d" style="height:100px">		
+					<a href="#mines">
+						<center><img src="images/mine.png" style="height:60px"/></center>
+					</a>Mines
+					</div>
+				</div>
+				<div class="ui-block-a">	
+					<div class="ui-bar ui-bar-d" style="height:100px">		
+					<a href="#portals">
+						<center><img src="images/portal.png" style="height:60px"/></center>
+					</a>Portals
+					</div>
+				</div><!-- /grid-b -->
+				<div class="ui-block-b">	
+					<div class="ui-bar ui-bar-d" style="height:100px">		
+					<a href="#ruins">
+						<center><img src="images/ruin.png" style="height:60px"/></center>
+					</a>Ruins
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+		<!-->	<div data-role="collapsible-set">
 				
 				<div data-role="collapsible" data-collapsed="true">
 					<h3>Find saved items by category.</h3>
 					<ul data-role="listview">
 						<li>
 							<a href="#campsites">
-								
 								<h5>Campsites</h5>
 							</a>
 						</li>
 						<li>
 							<a href="#caves">
-								
 								<h5>Caves</h5>
 							</a>
 						</li>
 						<li>
 							<a href="#forts">
-								
 								<h5>Forts</h5>
 							</a>
 						</li>
 						<li>
 							<a href="#mines">
-								
 								<h5>Mines</h5>
 							</a>
 						</li>	
 						<li>
 							<a href="#portals">
-								
 								<h5>Portals</h5>
 							</a>
 						</li>
 						<li>
 							<a href="#ruins">
-								
 								<h5>Ruins</h5>
 							</a>
 						</li>
@@ -79,7 +133,7 @@
 				</div>
 			</div>
 		</div>		
-	</div>
+	</div> -->
 	
 	
 	<div data-role="page" id="campsites" data-add-back-btn="true" data-theme="a">
